@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B8CC21AE93B5CEC3D5BFB2DF /* Pods_iCloud_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA382E522516CF6F5AB9DA8 /* Pods_iCloud_iOS.framework */; };
+		EEB3C04A28DA00A600D6B808 /* iCloud_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB3C04928DA00A600D6B808 /* iCloud_iOSApp.swift */; };
+		EEB3C04E28DA00A900D6B808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB3C04D28DA00A900D6B808 /* Assets.xcassets */; };
+		EEB3C05128DA00A900D6B808 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEB3C05028DA00A900D6B808 /* Preview Assets.xcassets */; };
+		EEF2C43628DA031300184B0E /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C43428DA031300184B0E /* LottieView.swift */; };
+		EEF2C43728DA031300184B0E /* SignForm.json in Resources */ = {isa = PBXBuildFile; fileRef = EEF2C43528DA031300184B0E /* SignForm.json */; };
+		EEF2C44128DA036C00184B0E /* GalleryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C43A28DA036C00184B0E /* GalleryService.swift */; };
+		EEF2C44228DA036C00184B0E /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C43C28DA036C00184B0E /* CoreDataService.swift */; };
+		EEF2C44328DA036C00184B0E /* FileEntity+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C43D28DA036C00184B0E /* FileEntity+ext.swift */; };
+		EEF2C44428DA036C00184B0E /* AppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C43E28DA036C00184B0E /* AppModel.xcdatamodeld */; };
+		EEF2C44528DA036C00184B0E /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C44028DA036C00184B0E /* URL.swift */; };
+		EEF2C44D28DA039800184B0E /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C44728DA039800184B0E /* UserDefaultKeys.swift */; };
+		EEF2C44E28DA039800184B0E /* FileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C44828DA039800184B0E /* FileModel.swift */; };
+		EEF2C44F28DA039800184B0E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C44928DA039800184B0E /* User.swift */; };
+		EEF2C45028DA039800184B0E /* Editable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C44A28DA039800184B0E /* Editable.swift */; };
+		EEF2C45128DA039800184B0E /* Focusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C44B28DA039800184B0E /* Focusable.swift */; };
+		EEF2C45228DA039800184B0E /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C44C28DA039800184B0E /* Filter.swift */; };
+		EEF2C45928DA03E500184B0E /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C45628DA03E500184B0E /* RegistrationViewModel.swift */; };
+		EEF2C45A28DA03E500184B0E /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C45828DA03E500184B0E /* RegistrationView.swift */; };
+		EEF2C45E28DA043800184B0E /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C45C28DA043800184B0E /* MainViewModel.swift */; };
+		EEF2C45F28DA043800184B0E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C45D28DA043800184B0E /* MainView.swift */; };
+		EEF2C46328DA047900184B0E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46128DA047900184B0E /* ContentViewModel.swift */; };
+		EEF2C46428DA047900184B0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46228DA047900184B0E /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		02AD6D6C27F9317D66813402 /* Pods-iCloud_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCloud_iOS.debug.xcconfig"; path = "Target Support Files/Pods-iCloud_iOS/Pods-iCloud_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7FA382E522516CF6F5AB9DA8 /* Pods_iCloud_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iCloud_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E97A0D057C95454F5E717A98 /* Pods-iCloud_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iCloud_iOS.release.xcconfig"; path = "Target Support Files/Pods-iCloud_iOS/Pods-iCloud_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		EEB3C04628DA00A600D6B808 /* iCloud_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCloud_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEB3C04928DA00A600D6B808 /* iCloud_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloud_iOSApp.swift; sourceTree = "<group>"; };
+		EEB3C04D28DA00A900D6B808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEB3C05028DA00A900D6B808 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEF2C43428DA031300184B0E /* LottieView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		EEF2C43528DA031300184B0E /* SignForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SignForm.json; sourceTree = "<group>"; };
+		EEF2C43A28DA036C00184B0E /* GalleryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryService.swift; sourceTree = "<group>"; };
+		EEF2C43C28DA036C00184B0E /* CoreDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		EEF2C43D28DA036C00184B0E /* FileEntity+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileEntity+ext.swift"; sourceTree = "<group>"; };
+		EEF2C43F28DA036C00184B0E /* ItemsAppModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ItemsAppModel.xcdatamodel; sourceTree = "<group>"; };
+		EEF2C44028DA036C00184B0E /* URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+		EEF2C44728DA039800184B0E /* UserDefaultKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
+		EEF2C44828DA039800184B0E /* FileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileModel.swift; sourceTree = "<group>"; };
+		EEF2C44928DA039800184B0E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EEF2C44A28DA039800184B0E /* Editable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Editable.swift; sourceTree = "<group>"; };
+		EEF2C44B28DA039800184B0E /* Focusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Focusable.swift; sourceTree = "<group>"; };
+		EEF2C44C28DA039800184B0E /* Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		EEF2C45628DA03E500184B0E /* RegistrationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		EEF2C45828DA03E500184B0E /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		EEF2C45C28DA043800184B0E /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		EEF2C45D28DA043800184B0E /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EEF2C46128DA047900184B0E /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		EEF2C46228DA047900184B0E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEB3C04328DA00A600D6B808 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8CC21AE93B5CEC3D5BFB2DF /* Pods_iCloud_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		090600F08645CC4FE88575E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02AD6D6C27F9317D66813402 /* Pods-iCloud_iOS.debug.xcconfig */,
+				E97A0D057C95454F5E717A98 /* Pods-iCloud_iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA62022A2188E96C93B233D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FA382E522516CF6F5AB9DA8 /* Pods_iCloud_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EEB3C03D28DA00A600D6B808 = {
+			isa = PBXGroup;
+			children = (
+				EEB3C04828DA00A600D6B808 /* iCloud_iOS */,
+				EEB3C04728DA00A600D6B808 /* Products */,
+				090600F08645CC4FE88575E5 /* Pods */,
+				DA62022A2188E96C93B233D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEB3C04728DA00A600D6B808 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3C04628DA00A600D6B808 /* iCloud_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEB3C04828DA00A600D6B808 /* iCloud_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C45B28DA043800184B0E /* MainModule */,
+				EEF2C46028DA047900184B0E /* Content */,
+				EEF2C45328DA03E500184B0E /* AuthModule */,
+				EEF2C44628DA039800184B0E /* Model */,
+				EEF2C43828DA036C00184B0E /* Services */,
+				EEF2C43328DA031300184B0E /* LottieAnimations */,
+				EEB3C04928DA00A600D6B808 /* iCloud_iOSApp.swift */,
+				EEB3C04D28DA00A900D6B808 /* Assets.xcassets */,
+				EEB3C04F28DA00A900D6B808 /* Preview Content */,
+			);
+			path = iCloud_iOS;
+			sourceTree = "<group>";
+		};
+		EEB3C04F28DA00A900D6B808 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3C05028DA00A900D6B808 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEF2C43328DA031300184B0E /* LottieAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C43428DA031300184B0E /* LottieView.swift */,
+				EEF2C43528DA031300184B0E /* SignForm.json */,
+			);
+			path = LottieAnimations;
+			sourceTree = "<group>";
+		};
+		EEF2C43828DA036C00184B0E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C43928DA036C00184B0E /* Gallery */,
+				EEF2C43B28DA036C00184B0E /* CoreDataLayer */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EEF2C43928DA036C00184B0E /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C43A28DA036C00184B0E /* GalleryService.swift */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
+		EEF2C43B28DA036C00184B0E /* CoreDataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C43C28DA036C00184B0E /* CoreDataService.swift */,
+				EEF2C43D28DA036C00184B0E /* FileEntity+ext.swift */,
+				EEF2C43E28DA036C00184B0E /* AppModel.xcdatamodeld */,
+				EEF2C44028DA036C00184B0E /* URL.swift */,
+			);
+			path = CoreDataLayer;
+			sourceTree = "<group>";
+		};
+		EEF2C44628DA039800184B0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C44728DA039800184B0E /* UserDefaultKeys.swift */,
+				EEF2C44828DA039800184B0E /* FileModel.swift */,
+				EEF2C44928DA039800184B0E /* User.swift */,
+				EEF2C44A28DA039800184B0E /* Editable.swift */,
+				EEF2C44B28DA039800184B0E /* Focusable.swift */,
+				EEF2C44C28DA039800184B0E /* Filter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEF2C45328DA03E500184B0E /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C45428DA03E500184B0E /* Registration */,
+			);
+			path = AuthModule;
+			sourceTree = "<group>";
+		};
+		EEF2C45428DA03E500184B0E /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C45528DA03E500184B0E /* ViewModel */,
+				EEF2C45728DA03E500184B0E /* View */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		EEF2C45528DA03E500184B0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C45628DA03E500184B0E /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEF2C45728DA03E500184B0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C45828DA03E500184B0E /* RegistrationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEF2C45B28DA043800184B0E /* MainModule */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C45C28DA043800184B0E /* MainViewModel.swift */,
+				EEF2C45D28DA043800184B0E /* MainView.swift */,
+			);
+			path = MainModule;
+			sourceTree = "<group>";
+		};
+		EEF2C46028DA047900184B0E /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C46128DA047900184B0E /* ContentViewModel.swift */,
+				EEF2C46228DA047900184B0E /* ContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEB3C04528DA00A600D6B808 /* iCloud_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEB3C05428DA00A900D6B808 /* Build configuration list for PBXNativeTarget "iCloud_iOS" */;
+			buildPhases = (
+				7B7B28D435146595F4E95257 /* [CP] Check Pods Manifest.lock */,
+				EEB3C04228DA00A600D6B808 /* Sources */,
+				EEB3C04328DA00A600D6B808 /* Frameworks */,
+				EEB3C04428DA00A600D6B808 /* Resources */,
+				3E3A578BF7E0053BCFA7E092 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCloud_iOS;
+			productName = iCloud_iOS;
+			productReference = EEB3C04628DA00A600D6B808 /* iCloud_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEB3C03E28DA00A600D6B808 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					EEB3C04528DA00A600D6B808 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = EEB3C04128DA00A600D6B808 /* Build configuration list for PBXProject "iCloud_iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEB3C03D28DA00A600D6B808;
+			productRefGroup = EEB3C04728DA00A600D6B808 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEB3C04528DA00A600D6B808 /* iCloud_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEB3C04428DA00A600D6B808 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB3C05128DA00A900D6B808 /* Preview Assets.xcassets in Resources */,
+				EEF2C43728DA031300184B0E /* SignForm.json in Resources */,
+				EEB3C04E28DA00A900D6B808 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E3A578BF7E0053BCFA7E092 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCloud_iOS/Pods-iCloud_iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iCloud_iOS/Pods-iCloud_iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iCloud_iOS/Pods-iCloud_iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B7B28D435146595F4E95257 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iCloud_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEB3C04228DA00A600D6B808 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEF2C44328DA036C00184B0E /* FileEntity+ext.swift in Sources */,
+				EEF2C45F28DA043800184B0E /* MainView.swift in Sources */,
+				EEF2C44128DA036C00184B0E /* GalleryService.swift in Sources */,
+				EEF2C44228DA036C00184B0E /* CoreDataService.swift in Sources */,
+				EEB3C04A28DA00A600D6B808 /* iCloud_iOSApp.swift in Sources */,
+				EEF2C43628DA031300184B0E /* LottieView.swift in Sources */,
+				EEF2C45128DA039800184B0E /* Focusable.swift in Sources */,
+				EEF2C45A28DA03E500184B0E /* RegistrationView.swift in Sources */,
+				EEF2C46428DA047900184B0E /* ContentView.swift in Sources */,
+				EEF2C45E28DA043800184B0E /* MainViewModel.swift in Sources */,
+				EEF2C45228DA039800184B0E /* Filter.swift in Sources */,
+				EEF2C44428DA036C00184B0E /* AppModel.xcdatamodeld in Sources */,
+				EEF2C45028DA039800184B0E /* Editable.swift in Sources */,
+				EEF2C45928DA03E500184B0E /* RegistrationViewModel.swift in Sources */,
+				EEF2C44E28DA039800184B0E /* FileModel.swift in Sources */,
+				EEF2C46328DA047900184B0E /* ContentViewModel.swift in Sources */,
+				EEF2C44528DA036C00184B0E /* URL.swift in Sources */,
+				EEF2C44D28DA039800184B0E /* UserDefaultKeys.swift in Sources */,
+				EEF2C44F28DA039800184B0E /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EEB3C05228DA00A900D6B808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEB3C05328DA00A900D6B808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEB3C05528DA00A900D6B808 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AD6D6C27F9317D66813402 /* Pods-iCloud_iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iCloud_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = X4XKW9NXX6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iCloud;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hey.iCloud-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		EEB3C05628DA00A900D6B808 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E97A0D057C95454F5E717A98 /* Pods-iCloud_iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iCloud_iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = X4XKW9NXX6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iCloud;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "hey.iCloud-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEB3C04128DA00A600D6B808 /* Build configuration list for PBXProject "iCloud_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB3C05228DA00A900D6B808 /* Debug */,
+				EEB3C05328DA00A900D6B808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEB3C05428DA00A900D6B808 /* Build configuration list for PBXNativeTarget "iCloud_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEB3C05528DA00A900D6B808 /* Debug */,
+				EEB3C05628DA00A900D6B808 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EEF2C43E28DA036C00184B0E /* AppModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EEF2C43F28DA036C00184B0E /* ItemsAppModel.xcdatamodel */,
+			);
+			currentVersion = EEF2C43F28DA036C00184B0E /* ItemsAppModel.xcdatamodel */;
+			path = AppModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EEB3C03E28DA00A600D6B808 /* Project object */;
+}
