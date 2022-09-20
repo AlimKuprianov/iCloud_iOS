@@ -32,6 +32,13 @@
 		EEF2C46428DA047900184B0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46228DA047900184B0E /* ContentView.swift */; };
 		EEF2C46828DA04FB00184B0E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46628DA04FB00184B0E /* ListView.swift */; };
 		EEF2C46928DA04FB00184B0E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46728DA04FB00184B0E /* ListViewModel.swift */; };
+		EEF2C46C28DA052B00184B0E /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46B28DA052B00184B0E /* GridView.swift */; };
+		EEF2C47428DA055B00184B0E /* GalleryImagePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46F28DA055B00184B0E /* GalleryImagePickerViewModel.swift */; };
+		EEF2C47528DA055B00184B0E /* PickerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C47128DA055B00184B0E /* PickerViewModelProtocol.swift */; };
+		EEF2C47628DA055B00184B0E /* GalleryImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C47328DA055B00184B0E /* GalleryImagePicker.swift */; };
+		EEF2C47C28DA056600184B0E /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C47928DA056600184B0E /* DocumentPicker.swift */; };
+		EEF2C47D28DA056600184B0E /* DocumentPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C47B28DA056600184B0E /* DocumentPickerViewModel.swift */; };
+		EEF2C48028DA05D300184B0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEF2C47F28DA05D300184B0E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +70,14 @@
 		EEF2C46228DA047900184B0E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EEF2C46628DA04FB00184B0E /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		EEF2C46728DA04FB00184B0E /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		EEF2C46B28DA052B00184B0E /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		EEF2C46F28DA055B00184B0E /* GalleryImagePickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryImagePickerViewModel.swift; sourceTree = "<group>"; };
+		EEF2C47128DA055B00184B0E /* PickerViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewModelProtocol.swift; sourceTree = "<group>"; };
+		EEF2C47328DA055B00184B0E /* GalleryImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryImagePicker.swift; sourceTree = "<group>"; };
+		EEF2C47928DA056600184B0E /* DocumentPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		EEF2C47B28DA056600184B0E /* DocumentPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentPickerViewModel.swift; sourceTree = "<group>"; };
+		EEF2C47F28DA05D300184B0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EEF2C48128DA06AE00184B0E /* iCloud-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "iCloud-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,14 +130,14 @@
 		EEB3C04828DA00A600D6B808 /* iCloud_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EEF2C46528DA04FB00184B0E /* List */,
-				EEF2C45B28DA043800184B0E /* MainModule */,
-				EEF2C46028DA047900184B0E /* Content */,
-				EEF2C45328DA03E500184B0E /* AuthModule */,
+				EEF2C48128DA06AE00184B0E /* iCloud-iOS-Info.plist */,
+				EEF2C47F28DA05D300184B0E /* GoogleService-Info.plist */,
+				EEF2C47E28DA057300184B0E /* Pickers */,
 				EEF2C44628DA039800184B0E /* Model */,
 				EEF2C43828DA036C00184B0E /* Services */,
 				EEF2C43328DA031300184B0E /* LottieAnimations */,
-				EEB3C04928DA00A600D6B808 /* iCloud_iOSApp.swift */,
+				EEF2C48328DA078800184B0E /* Screens */,
+				EEF2C48228DA075800184B0E /* Application */,
 				EEB3C04D28DA00A900D6B808 /* Assets.xcassets */,
 				EEB3C04F28DA00A900D6B808 /* Preview Content */,
 			);
@@ -247,6 +262,102 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		EEF2C46A28DA052B00184B0E /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C46B28DA052B00184B0E /* GridView.swift */,
+			);
+			path = Grid;
+			sourceTree = "<group>";
+		};
+		EEF2C46D28DA055B00184B0E /* ImagePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C46E28DA055B00184B0E /* ViewModel */,
+				EEF2C47028DA055B00184B0E /* FileSizeValidation */,
+				EEF2C47228DA055B00184B0E /* View */,
+			);
+			path = ImagePicker;
+			sourceTree = "<group>";
+		};
+		EEF2C46E28DA055B00184B0E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C46F28DA055B00184B0E /* GalleryImagePickerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEF2C47028DA055B00184B0E /* FileSizeValidation */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C47128DA055B00184B0E /* PickerViewModelProtocol.swift */,
+			);
+			path = FileSizeValidation;
+			sourceTree = "<group>";
+		};
+		EEF2C47228DA055B00184B0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C47328DA055B00184B0E /* GalleryImagePicker.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EEF2C47728DA056600184B0E /* DocumentPicker */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C47828DA056600184B0E /* DocumentView */,
+				EEF2C47A28DA056600184B0E /* DocumentViewModel */,
+			);
+			path = DocumentPicker;
+			sourceTree = "<group>";
+		};
+		EEF2C47828DA056600184B0E /* DocumentView */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C47928DA056600184B0E /* DocumentPicker.swift */,
+			);
+			path = DocumentView;
+			sourceTree = "<group>";
+		};
+		EEF2C47A28DA056600184B0E /* DocumentViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C47B28DA056600184B0E /* DocumentPickerViewModel.swift */,
+			);
+			path = DocumentViewModel;
+			sourceTree = "<group>";
+		};
+		EEF2C47E28DA057300184B0E /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C47728DA056600184B0E /* DocumentPicker */,
+				EEF2C46D28DA055B00184B0E /* ImagePicker */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		EEF2C48228DA075800184B0E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EEB3C04928DA00A600D6B808 /* iCloud_iOSApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EEF2C48328DA078800184B0E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C46A28DA052B00184B0E /* Grid */,
+				EEF2C46528DA04FB00184B0E /* List */,
+				EEF2C45B28DA043800184B0E /* MainModule */,
+				EEF2C46028DA047900184B0E /* Content */,
+				EEF2C45328DA03E500184B0E /* AuthModule */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -308,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEB3C05128DA00A900D6B808 /* Preview Assets.xcassets in Resources */,
+				EEF2C48028DA05D300184B0E /* GoogleService-Info.plist in Resources */,
 				EEF2C43728DA031300184B0E /* SignForm.json in Resources */,
 				EEB3C04E28DA00A900D6B808 /* Assets.xcassets in Resources */,
 			);
@@ -366,6 +478,8 @@
 				EEF2C45F28DA043800184B0E /* MainView.swift in Sources */,
 				EEF2C46928DA04FB00184B0E /* ListViewModel.swift in Sources */,
 				EEF2C44128DA036C00184B0E /* GalleryService.swift in Sources */,
+				EEF2C47C28DA056600184B0E /* DocumentPicker.swift in Sources */,
+				EEF2C47D28DA056600184B0E /* DocumentPickerViewModel.swift in Sources */,
 				EEF2C44228DA036C00184B0E /* CoreDataService.swift in Sources */,
 				EEB3C04A28DA00A600D6B808 /* iCloud_iOSApp.swift in Sources */,
 				EEF2C43628DA031300184B0E /* LottieView.swift in Sources */,
@@ -374,15 +488,19 @@
 				EEF2C46428DA047900184B0E /* ContentView.swift in Sources */,
 				EEF2C45E28DA043800184B0E /* MainViewModel.swift in Sources */,
 				EEF2C45228DA039800184B0E /* Filter.swift in Sources */,
+				EEF2C47528DA055B00184B0E /* PickerViewModelProtocol.swift in Sources */,
 				EEF2C44428DA036C00184B0E /* AppModel.xcdatamodeld in Sources */,
 				EEF2C46828DA04FB00184B0E /* ListView.swift in Sources */,
+				EEF2C46C28DA052B00184B0E /* GridView.swift in Sources */,
 				EEF2C45028DA039800184B0E /* Editable.swift in Sources */,
+				EEF2C47628DA055B00184B0E /* GalleryImagePicker.swift in Sources */,
 				EEF2C45928DA03E500184B0E /* RegistrationViewModel.swift in Sources */,
 				EEF2C44E28DA039800184B0E /* FileModel.swift in Sources */,
 				EEF2C46328DA047900184B0E /* ContentViewModel.swift in Sources */,
 				EEF2C44528DA036C00184B0E /* URL.swift in Sources */,
 				EEF2C44D28DA039800184B0E /* UserDefaultKeys.swift in Sources */,
 				EEF2C44F28DA039800184B0E /* User.swift in Sources */,
+				EEF2C47428DA055B00184B0E /* GalleryImagePickerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,13 +633,15 @@
 				DEVELOPMENT_TEAM = X4XKW9NXX6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iCloud-iOS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = iCloud;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Приложению нужен доступ к фото";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,13 +671,15 @@
 				DEVELOPMENT_TEAM = X4XKW9NXX6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iCloud-iOS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = iCloud;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Приложению нужен доступ к фото";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
