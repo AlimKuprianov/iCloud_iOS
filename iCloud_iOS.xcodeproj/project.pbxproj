@@ -30,6 +30,8 @@
 		EEF2C45F28DA043800184B0E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C45D28DA043800184B0E /* MainView.swift */; };
 		EEF2C46328DA047900184B0E /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46128DA047900184B0E /* ContentViewModel.swift */; };
 		EEF2C46428DA047900184B0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46228DA047900184B0E /* ContentView.swift */; };
+		EEF2C46828DA04FB00184B0E /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46628DA04FB00184B0E /* ListView.swift */; };
+		EEF2C46928DA04FB00184B0E /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF2C46728DA04FB00184B0E /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		EEF2C45D28DA043800184B0E /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		EEF2C46128DA047900184B0E /* ContentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		EEF2C46228DA047900184B0E /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEF2C46628DA04FB00184B0E /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		EEF2C46728DA04FB00184B0E /* ListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		EEB3C04828DA00A600D6B808 /* iCloud_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				EEF2C46528DA04FB00184B0E /* List */,
 				EEF2C45B28DA043800184B0E /* MainModule */,
 				EEF2C46028DA047900184B0E /* Content */,
 				EEF2C45328DA03E500184B0E /* AuthModule */,
@@ -233,6 +238,15 @@
 			path = Content;
 			sourceTree = "<group>";
 		};
+		EEF2C46528DA04FB00184B0E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				EEF2C46628DA04FB00184B0E /* ListView.swift */,
+				EEF2C46728DA04FB00184B0E /* ListViewModel.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +364,7 @@
 			files = (
 				EEF2C44328DA036C00184B0E /* FileEntity+ext.swift in Sources */,
 				EEF2C45F28DA043800184B0E /* MainView.swift in Sources */,
+				EEF2C46928DA04FB00184B0E /* ListViewModel.swift in Sources */,
 				EEF2C44128DA036C00184B0E /* GalleryService.swift in Sources */,
 				EEF2C44228DA036C00184B0E /* CoreDataService.swift in Sources */,
 				EEB3C04A28DA00A600D6B808 /* iCloud_iOSApp.swift in Sources */,
@@ -360,6 +375,7 @@
 				EEF2C45E28DA043800184B0E /* MainViewModel.swift in Sources */,
 				EEF2C45228DA039800184B0E /* Filter.swift in Sources */,
 				EEF2C44428DA036C00184B0E /* AppModel.xcdatamodeld in Sources */,
+				EEF2C46828DA04FB00184B0E /* ListView.swift in Sources */,
 				EEF2C45028DA039800184B0E /* Editable.swift in Sources */,
 				EEF2C45928DA03E500184B0E /* RegistrationViewModel.swift in Sources */,
 				EEF2C44E28DA039800184B0E /* FileModel.swift in Sources */,
