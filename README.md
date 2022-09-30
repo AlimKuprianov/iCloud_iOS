@@ -1,20 +1,32 @@
 # iCloud_iOS
 
-Приложение для облачного хранилища, созданное с использованием Swift UI, где пользователь может зарегистрироваться и пользоваться
-функциями облачного хранилища, такими как загрузка файлов.
+A cloud storage application created using SwiftUI & Combine, 
+where the user can register and use cloud storage features such as file downloads.
 
-# 📲 Стек:
+# 📲 Stack:
 - SwiftUI
+- Combine
 - MVVM
 - Firebase
 - Lottie 
 - CoreData
 - UserDefaults
 
+# How to install? 🤔
+1. ️ Clone this repository
+`git clone https://github.com/AlimKuprianov/iCloud_iOS.git`
+2. 💽 Install required dependencies
+`pod install`
+3. 🍾 Open `.xcworkspace` file
+4. 🔨 Build and Run 🏃
+
+
+# Screens
+
 <table>
   <tr>
-    <td>Авторизация</td>
-    <td>Главный экран</td>
+    <td>Authorization</td>
+    <td>Main Screen</td>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/44450208/191445742-d29e1534-cc3e-4e9c-8319-54914d8d16c6.jpeg"></td>
