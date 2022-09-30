@@ -1,6 +1,7 @@
 # iCloud_iOS
 
-A cloud storage application created using SwiftUI & Combine, where the user can register and use cloud storage features such as file downloads.
+A cloud storage application created using SwiftUI & Combine, 
+where the user can register and use cloud storage features such as file downloads.
 
 # 📲 Stack:
 - SwiftUI
