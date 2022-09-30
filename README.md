@@ -29,9 +29,10 @@ where the user can register and use cloud storage features such as file download
     <td>Main Screen</td>
   </tr>
   <tr>
+![photo_2022-09-30 20 03 43](https://user-images.githubusercontent.com/44450208/193321999-4dcf7c09-cdc5-4d1b-869c-4c4470c69de7.jpeg)
 
-    <td><img src="https://user-images.githubusercontent.com/44450208/193321057-a977a3d6-738d-48f2-9005-1c2c7862cbb1.jpeg"></td>
-    <td><img src="https://user-images.githubusercontent.com/44450208/193321204-2a9c5073-d9be-4aa7-bbea-cb3f7df9cf80.jpeg"></td>
+    <td><img src="https://user-images.githubusercontent.com/44450208/193321925-cc09e322-433d-47fd-8e10-852e61674385.jpeg"></td>
+    <td><img src="(https://user-images.githubusercontent.com/44450208/193321999-4dcf7c09-cdc5-4d1b-869c-4c4470c69de7.jpeg"></td>
 
   </tr>
  
