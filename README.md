@@ -11,6 +11,15 @@ A cloud storage application created using SwiftUI & Combine, where the user can 
 - CoreData
 - UserDefaults
 
+# How to install? 🤔
+1. ️ Clone this repository
+`git clone https://github.com/AlimKuprianov/iCloud_iOS.git`
+2. 💽 Install required dependencies
+`pod install`
+3. 🍾 Open `.xcworkspace` file
+4. 🔨 Build and Run 🏃
+
+
 <table>
   <tr>
     <td>Authorization</td>
