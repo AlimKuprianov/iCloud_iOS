@@ -31,7 +31,5 @@ where the user can register and use cloud storage features such as file download
   <tr>
     <td><img src="https://user-images.githubusercontent.com/44450208/193321925-cc09e322-433d-47fd-8e10-852e61674385.jpeg"></td>
     <td><img src="(https://user-images.githubusercontent.com/44450208/193321999-4dcf7c09-cdc5-4d1b-869c-4c4470c69de7.jpeg"></td>
-
   </tr>
- 
  </table>
