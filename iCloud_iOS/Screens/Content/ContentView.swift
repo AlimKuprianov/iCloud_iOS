@@ -52,20 +52,20 @@ struct ContentView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 HStack {
-                    Text("Действия")
+                    Text("activities")
                     Menu {
                         Section {
-                            Picker(selection: $viewModel.segmentedIndex, label: Text("Отображать как:")) {
-                                Label("Список", systemImage: "list.bullet").tag(0)
-                                Label("Сетка", systemImage: "square.grid.2x2").tag(1)
+                            Picker(selection: $viewModel.segmentedIndex, label: Text("View as:")) {
+                                Label("List", systemImage: "list.bullet").tag(0)
+                                Label("Grid", systemImage: "square.grid.2x2").tag(1)
                             }
                         }
                         
                         Section {
                             Picker(selection: $viewModel.filterType, label: Text("Filter")) {
-                                Label("Папки", systemImage: "folder.fill").tag(Filter.folders)
-                                Label("Ничего", systemImage: "questionmark.folder.fill").tag(Filter.none)
-                                Label("Файлы", systemImage: "doc.on.clipboard.fill").tag(Filter.files)
+                                Label("Folders", systemImage: "folder.fill").tag(Filter.folders)
+                                Label("None", systemImage: "questionmark.folder.fill").tag(Filter.none)
+                                Label("Files", systemImage: "doc.on.clipboard.fill").tag(Filter.files)
                             }
                         }
                         Section {
@@ -73,25 +73,25 @@ struct ContentView: View {
                                 Button {
                                     viewModel.addFolder()
                                 } label: {
-                                    Label("Новая папка", systemImage: "folder.fill.badge.plus")
+                                    Label("New Folder", systemImage: "folder.fill.badge.plus")
                                 }
                             }
                             Button {
                                 viewModel.openImagePicker()
                             } label: {
-                                Label("Новое изображение", systemImage: "photo.fill.on.rectangle.fill")
+                                Label("New image", systemImage: "photo.fill.on.rectangle.fill")
                             }
                             Button {
                                 viewModel.openDocumentPicker()
                             } label: {
-                                Label("Новый документ", systemImage: "doc.on.doc.fill")
+                                Label("New document", systemImage: "doc.on.doc.fill")
                             }
                         }
                         Section {
                             Button(role: .destructive) {
                                 viewModel.logOut()
                             } label: {
-                                Text("Выход")
+                                Text("Log out")
                             }
                         }
                     } label: {

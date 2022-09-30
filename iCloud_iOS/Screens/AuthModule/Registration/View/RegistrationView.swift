@@ -54,9 +54,12 @@ struct RegistrationView: View {
                                 .frame(width: 311, height: 50)
                                 .background(Color(red: 0/255, green: 115/255, blue: 239/255))
                                 .cornerRadius(30)
-                                .foregroundColor(.white)
+                                .foregroundColor(.white).opacity(authViewModel.buttonOpacity)
+
                                 .padding(15)
                         }
+                        .disabled(!authViewModel.isValid)
+
             
                         Button {
                             authViewModel.signInButtonPressed()
@@ -67,9 +70,10 @@ struct RegistrationView: View {
                                 .frame(width: 311, height: 50)
                                 .background(Color.gray)
                                 .cornerRadius(30)
-                                .foregroundColor(.white)
+                                .foregroundColor(.white).opacity(authViewModel.buttonOpacity)
                                 .padding(5)
                         }
+                        .disabled(!authViewModel.isValid)
                     }
                     Spacer()
                 }

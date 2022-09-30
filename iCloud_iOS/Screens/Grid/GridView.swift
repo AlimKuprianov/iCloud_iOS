@@ -72,12 +72,12 @@ struct GridView: View {
                                 self.focusedItem = .item(id: item.id.uuidString)
                             }
                         } label: {
-                            Label("Переименовать", systemImage: "pencil")
+                            Label("Rename", systemImage: "pencil")
                         }
                         Button(role: .destructive) {
                             viewModel.delete(item)
                         } label: {
-                            Label("Удалить", systemImage: "trash.fill")
+                            Label("Delete", systemImage: "trash.fill")
                         }
                     }
                     .padding(.horizontal)

@@ -39,7 +39,7 @@ class MainViewModel: ObservableObject {
                               id: UUID(),
                               ownerID: id,
                               url: nil,
-                              fileName: "Документы",
+                              fileName: "Documents",
                               parentId: nil)
         entity.type = try? JSONEncoder().encode(folder.fileType)
         entity.depthLevel = Int16(folder.depthLevel)

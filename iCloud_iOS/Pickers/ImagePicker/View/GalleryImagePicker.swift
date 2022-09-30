@@ -53,7 +53,7 @@ struct GalleryImagePicker: UIViewControllerRepresentable {
             guard let provider = results.first?.itemProvider else { return }
             guard provider.canLoadObject(ofClass: PHLivePhoto.self) == false else {
                 
-                mediaPicker.alertMessage = "Нет поддержки livePhoto :("
+                mediaPicker.alertMessage = "Not added livePhoto :("
                 mediaPicker.showAlert = true
                 return
             }
@@ -63,7 +63,7 @@ struct GalleryImagePicker: UIViewControllerRepresentable {
                     
                     guard let url = url else { return }
                     guard self.mediaPicker.viewModel.validateFileSize(url) == true else {
-                        self.mediaPicker.alertMessage = "Медиа больше 20МБ!"
+                        self.mediaPicker.alertMessage = "Media more than 20MB!"
                         self.mediaPicker.showAlert = true
                         return
                     }
@@ -76,7 +76,7 @@ struct GalleryImagePicker: UIViewControllerRepresentable {
                     
                     guard let url = url else { return }
                     guard self.mediaPicker.viewModel.validateFileSize(url) == true else {
-                        self.mediaPicker.alertMessage = "Медиа больше 20МБ!"
+                        self.mediaPicker.alertMessage = "Media more than 20MB!"
                         self.mediaPicker.showAlert = true
                         return
                     }

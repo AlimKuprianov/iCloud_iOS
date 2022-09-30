@@ -64,7 +64,7 @@ struct ListView: View {
                             self.focusedItem = .item(id: item.id.uuidString)
                         }
                     } label: {
-                        Label("Переименовать", systemImage: "pencil")
+                        Label("Rename", systemImage: "pencil")
                     }
                 }
             }

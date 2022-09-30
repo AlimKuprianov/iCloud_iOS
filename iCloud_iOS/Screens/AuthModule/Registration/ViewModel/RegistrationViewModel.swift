@@ -7,13 +7,14 @@
 
 import Foundation
 import FirebaseAuth
+import Combine
 
 final class RegistrationViewModel: ObservableObject {
     
     //MARK: - INPUT
     
-    var email: String = ""
-    var password: String = ""
+    @Published var email: String = ""
+    @Published var password: String = ""
     
     //MARK: - OUTPUT
     
@@ -21,12 +22,12 @@ final class RegistrationViewModel: ObservableObject {
     @Published var isNeedAlert = false
     @Published var alertMessage = ""
     
-    public var emailPlaceholder = "Почта"
-    public var passwordPlaceholder = "Пароль"
-    public var logInTitle = "Уже есть аккаунт?"
-    public var registrationTitle = "Регистрация"
-    public var signInTitle = "Войти"
-    var title = "Регистрация"
+    public var emailPlaceholder = "Email"
+    public var passwordPlaceholder = "Password"
+    public var logInTitle = "Already have an account?"
+    public var registrationTitle = "Registration"
+    public var signInTitle = "Log in"
+    var title = "Registration"
     
     public var user: User
     
@@ -36,24 +37,33 @@ final class RegistrationViewModel: ObservableObject {
         return isValid ? 1.0 : 0.5
     }
     
-    private var isEmailValid: Bool {
-        return !email.isEmpty
-    }
-    
-    private var isPasswordValid: Bool {
-        return !password.isEmpty
-    }
-    
-    init(user: User) {
-        self.user = user
-    }
-    
-    
+    private var cancellableSet: Set<AnyCancellable> = []
+        private var isEmailEmptyPublisher: AnyPublisher<Bool, Never> {
+            $email
+                .map({ !$0.isEmpty })
+                .eraseToAnyPublisher()
+        }
+        private var isPasswordEmptyPublisher: AnyPublisher<Bool, Never> {
+            $password
+                .map { !$0.isEmpty }
+                .eraseToAnyPublisher()
+        }
+        private var isValidPublisher: AnyPublisher<Bool, Never> {
+            Publishers.CombineLatest(isEmailEmptyPublisher, isPasswordEmptyPublisher)
+                .map { $0 == true && $1 == true }
+                .eraseToAnyPublisher()
+        }
+        
+        init(user: User) {
+            self.user = user
+            isValidPublisher
+                .receive(on: RunLoop.main)
+                .assign(to: \.isValid, on: self)
+                .store(in: &cancellableSet)
+        }
     
     public func signUpButtonPressed() {
         
-        if isEmailValid && isPasswordValid {
-            isValid = true
             auth.createUser(withEmail: email, password: password) { authResult, error in
                 
                 guard error == nil else  {
@@ -69,17 +79,14 @@ final class RegistrationViewModel: ObservableObject {
                     self.isNeedAlert.toggle()
                     return
                 }
-                self.alertMessage = "Ваш аккаунт успешно создан"
+                self.alertMessage = "Your account have been created!"
                 self.isNeedAlert.toggle()
-                print("Ваш аккаунт успешно создан")
             }
-        }
+        
     }
     
     
     public func signInButtonPressed() {
-        if isEmailValid && isPasswordValid {
-            isValid = true
 
             auth.signIn(withEmail: email, password: password) { signInResult, error in
                 guard error == nil else {
@@ -97,10 +104,8 @@ final class RegistrationViewModel: ObservableObject {
                 self.user.email = signInResult?.user.email
                 self.user.getToken()
                 self.isNeedAlert.toggle()
-                self.alertMessage = "Вы успешно зашли в свой аккаунт"
+                self.alertMessage = "You have Signed In"
                 print("\(signInResult?.user.uid)")
             }
         }
-        
-    }
 }

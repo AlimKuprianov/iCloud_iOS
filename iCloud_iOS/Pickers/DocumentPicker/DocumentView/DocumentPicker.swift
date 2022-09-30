@@ -51,12 +51,12 @@ struct DocumentPicker: UIViewControllerRepresentable {
             }
             
             guard picker.viewModel.validateFileSize(url) else {
-                picker.alertMessage = "Файл больше 20МБ!"
+                picker.alertMessage = "File size more than 20MB!"
                 picker.showAlert = true
                 return
             }
             guard picker.viewModel.validateFileExtension(url) else {
-                picker.alertMessage = "Неподдерживаемый формат файла"
+                picker.alertMessage = "error format file"
                 picker.showAlert = true
                 return
             }

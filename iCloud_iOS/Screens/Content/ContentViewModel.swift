@@ -39,7 +39,7 @@ final class ContentViewModel: ObservableObject {
     }
     
     public var folderName: String {
-        parentFolder?.fileName ?? "Папка"
+        parentFolder?.fileName ?? "Folder"
     }
     
     public func getAllFiles() {
@@ -81,7 +81,7 @@ final class ContentViewModel: ObservableObject {
                               id: UUID(),
                               ownerID: user.userID,
                               url: nil,
-                              fileName: "Новая папка",
+                              fileName: "New Folder",
                               parentId: parentFolder.parentId)
         
         entityItems.insert(folder, at: 0)
@@ -96,7 +96,7 @@ final class ContentViewModel: ObservableObject {
         GalleryService.imagePickerRequest { reqResult in
             DispatchQueue.main.async {
                 guard reqResult == true else {
-                    self.alertMessage = "Проблемы с доступом в Фотогалерею"
+                    self.alertMessage = "We have some error passing in Photo App"
                     self.isNeedAlert.toggle()
                     return
                 }
